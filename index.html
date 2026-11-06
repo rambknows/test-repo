@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monochrome SEO | SEO Training & Course in Nepal</title>
+    <meta name="description" content="Monochrome SEO बाट नेपाली भाषामा International Standard SEO Training र SEO Course सिक्नुहोस्। Lalitpur, Nepal.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0b0d;
+            color: #fff;
+            line-height: 1.7;
+        }
+
+        :root {
+            --black: #0b0b0d;
+            --dark: #151519;
+            --white: #fff;
+            --gray: #a7a7ae;
+            --accent: #b8a4ff;
+            --light: #e9e3ff;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        /* Navigation */
+
+        header {
+            background: rgba(11, 11, 13, 0.97);
+            border-bottom: 1px solid #29292f;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            min-height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #d1d1d6;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        .nav-btn {
+            background: var(--accent);
+            color: #111 !important;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        /* Hero */
+
+        .hero {
+            padding: 70px 0 90px;
+            background:
+                radial-gradient(ellipse at 80% 30%, #34275b 0%, transparent 45%),
+                linear-gradient(135deg, #101014, #191621);
+        }
+
+        .hero-banner {
+            width: 100%;
+            max-height: 480px;
+            object-fit: cover;
+            border-radius: 18px;
+            margin-bottom: 55px;
+            border: 1px solid #393044;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .tag {
+            display: inline-block;
+            border: 1px solid #7665a9;
+            color: var(--light);
+            padding: 7px 17px;
+            border-radius: 30px;
+            font-size: 13px;
+            margin-bottom: 25px;
+            background: rgba(184, 164, 255, 0.08);
+        }
+
+        .hero h1 {
+            font-size: clamp(40px, 6vw, 68px);
+            line-height: 1.15;
+            margin-bottom: 25px;
+            letter-spacing: -2px;
+        }
+
+        .hero h1 span {
+            color: var(--accent);
+        }
+
+        .hero p {
+            color: #c2c0cb;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .trainer-image {
+            background: #28203b;
+            padding: 12px;
+            border-radius: 20px;
+            border: 1px solid #51446d;
+        }
+
+        .trainer-image img {
+            display: block;
+            width: 100%;
+            border-radius: 14px;
+            object-fit: cover;
+        }
+
+        .trainer-caption {
+            text-align: center;
+            padding: 17px 5px 8px;
+        }
+
+        .trainer-caption h3 {
+            color: var(--light);
+            font-size: 21px;
+        }
+
+        .trainer-caption p {
+            color: var(--gray);
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #111;
+        }
+
+        .btn-primary:hover {
+            background: #d1c4ff;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            border: 1px solid #aaa;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #111;
+        }
+
+        /* Common Sections */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 55px;
+        }
+
+        .section-heading .small-title {
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(30px, 5vw, 43px);
+            margin: 12px 0;
+        }
+
+        .section-heading p {
+            color: var(--gray);
+        }
+
+        /* Services */
+
+        .services {
+            background: var(--black);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            max-width: 950px;
+            margin: auto;
+        }
+
+        .service-card {
+            background: var(--dark);
+            border: 1px solid #303038;
+            padding: 25px;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-6px);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .service-icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .service-card h3 {
+            font-size: 23px;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            color: var(--gray);
+            font-size: 15px;
+        }
+
+        /* Why Choose Us */
+
+        .why-us {
+            background: #141419;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .why-card {
+            display: flex;
+            gap: 18px;
+            align-items: flex-start;
+            background: #1c1c23;
+            padding: 27px;
+            border-radius: 12px;
+            border: 1px solid #303038;
+        }
+
+        .why-icon {
+            font-size: 30px;
+            flex-shrink: 0;
+        }
+
+        .why-card h3 {
+            font-size: 19px;
+            margin-bottom: 7px;
+            color: var(--light);
+        }
+
+        .why-card p {
+            font-size: 14px;
+            color: var(--gray);
+        }
+
+        /* Testimonials */
+
+        .testimonials {
+            background: var(--black);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .testimonial-card {
+            background: var(--dark);
+            border: 1px solid #303038;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .testimonial-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .testimonial-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 18px;
+        }
+
+        .testimonial-card h3 {
+            color: var(--light);
+            font-size: 19px;
+            margin-bottom: 8px;
+        }
+
+        .testimonial-card p {
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        .testimonial-note {
+            text-align: center;
+            color: var(--gray);
+            font-size: 13px;
+            margin-top: 25px;
+        }
+
+        /* Location */
+
+        .location {
+            background: var(--black);
+        }
+
+        .location-box {
+            background: linear-gradient(135deg, #28203b, #17171e);
+            border: 1px solid #50436e;
+            border-radius: 18px;
+            padding: 45px;
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .location-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .location-box h3 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .location-box p {
+            color: #c5c1d0;
+        }
+
+        /* Contact */
+
+        .contact {
+            background: #17151e;
+            text-align: center;
+        }
+
+        .contact-content {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .contact-content h2 {
+            font-size: clamp(30px, 5vw, 45px);
+            margin-bottom: 15px;
+        }
+
+        .contact-content p {
+            color: var(--gray);
+            margin-bottom: 30px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .phone-btn {
+            background: var(--accent);
+            color: #111;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: #071d10;
+        }
+
+        /* Footer */
+
+        footer {
+            background: #09090b;
+            border-top: 1px solid #29292f;
+            padding: 25px 0;
+            text-align: center;
+        }
+
+        footer p {
+            color: #888;
+            font-size: 13px;
+        }
+
+        footer strong {
+            color: var(--accent);
+        }
+
+        /* Responsive */
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            nav {
+                min-height: 65px;
+            }
+
+            .hero {
+                padding: 35px 0 65px;
+            }
+
+            .hero-banner {
+                margin-bottom: 35px;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .hero h1 {
+                letter-spacing: -1px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .service-grid,
+            .why-grid,
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-card {
+                padding: 20px;
+            }
+
+            .why-card {
+                padding: 22px;
+            }
+
+            .location-box {
+                padding: 30px 20px;
+            }
+
+            .buttons,
+            .contact-buttons {
+                flex-direction: column;
+            }
+
+            .buttons .btn,
+            .contact-buttons .btn {
+                width: 100%;
+            }
+
+            .testimonial-card img {
+                height: 260px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">MONOCHROME <span>SEO.</span></a>
+
+                <ul class="nav-links">
+                    <li><a href="#home">गृहपृष्ठ</a></li>
+                    <li><a href="#services">हाम्रा सेवाहरू</a></li>
+                    <li><a href="#why-us">किन हामी?</a></li>
+                    <li><a href="#testimonials">विद्यार्थीहरू</a></li>
+                    <li><a href="#location">ठेगाना</a></li>
+                    <li><a href="#contact" class="nav-btn">सम्पर्क गर्नुहोस्</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+
+            <img
+                src="images/banner-1.jpg"
+                alt="Monochrome SEO मा शिक्षकले विद्यार्थीहरूलाई SEO सिकाउँदै गरेको दृश्य"
+                width="1200"
+                height="800"
+                fetchpriority="high"
+                class="hero-banner"
+            >
+
+            <div class="hero-content">
+
+                <div>
+                    <span class="tag">🚀 SEO Learning Starts Here</span>
+
+                    <h1>
+                        SEO सिक्नुहोस्,<br>
+                        आफ्नो <span>Digital Future</span><br>
+                        बनाउनुहोस्।
+                    </h1>
+
+                    <p>
+                        Monochrome SEO सँग नेपाली भाषामा International Standard SEO Training र Course सिक्नुहोस्। आफ्नो डिजिटल सीप विकास गर्ने यात्रा आजै सुरु गर्नुहोस्।
+                    </p>
+
+                    <div class="buttons">
+                        <a href="#services" class="btn btn-primary">
+                            हाम्रा कोर्सहरू हेर्नुहोस् →
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            हामीलाई सम्पर्क गर्नुहोस्
+                        </a>
+                    </div>
+                </div>
+
+                <div class="trainer-image">
+                    <img
+                        src="images/trainer.jpeg"
+                        alt="Rambabu Thapa, SEO Trainer"
+                        width="1200"
+                        height="800"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <div class="trainer-caption">
+                        <h3>Rambabu Thapa</h3>
+                        <p>SEO Trainer</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="small-title">हाम्रा सेवाहरू</span>
+                <h2>हामी के सिकाउँछौँ?</h2>
+                <p>
+                    SEO को ज्ञान र सीप विकास गर्न डिजाइन गरिएका हाम्रा Learning Opportunities।
+                </p>
+            </div>
+
+            <div class="service-grid">
+
+                <div class="service-card">
+                    <img
+                        src="images/course.jpg"
+                        alt="विद्यार्थीहरू SEO Learning र Practical Training गर्दै"
+                        width="1200"
+                        height="800"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <div class="service-icon">🎓</div>
+                    <h3>SEO Training</h3>
+
+                    <p>
+                        नेपाली भाषामा SEO को ज्ञान र Practical Skills सिक्नुहोस्। आफ्नो SEO Learning Journey लाई सही दिशामा अगाडि बढाउनुहोस्।
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <img
+                        src="images/certificate.jpg"
+                        alt="SEO Mastery Course को Certificate"
+                        width="1200"
+                        height="800"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <div class="service-icon">🏅</div>
+                    <h3>SEO Course</h3>
+
+                    <p>
+                        SEO सम्बन्धी ज्ञान हासिल गर्न र आफ्नो डिजिटल सीप विकास गर्न हाम्रो SEO Course मा सहभागी हुनुहोस्।
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="small-title">किन Monochrome SEO?</span>
+                <h2>हामीलाई किन रोज्ने?</h2>
+                <p>
+                    गुणस्तरीय SEO Education र नेपाली भाषामा सिक्ने सहज वातावरण।
+                </p>
+            </div>
+
+            <div class="why-grid">
+
+                <div class="why-card">
+                    <div class="why-icon">🌍</div>
+                    <div>
+                        <h3>International Standard Training</h3>
+                        <p>
+                            नेपालमै बसेर International Standard को SEO Training सिक्ने अवसर।
+                        </p>
+                    </div>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">🏆</div>
+                    <div>
+                        <h3>१५ वर्षको अनुभव</h3>
+                        <p>
+                            १५ वर्षको अनुभव भएका Trainer बाट SEO सम्बन्धी ज्ञान र सीप सिक्नुहोस्।
+                        </p>
+                    </div>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">🇳🇵</div>
+                    <div>
+                        <h3>नेपाली भाषामा Training</h3>
+                        <p>
+                            SEO का विषयहरू आफ्नै नेपाली भाषामा सजिलोसँग बुझेर सिक्नुहोस्।
+                        </p>
+                    </div>
+                </div>
+
+                <div class="why-card">
+                    <div class="why-icon">✨</div>
+                    <div>
+                        <h3>१००% Success Rate</h3>
+                        <p>
+                            हाम्रो Training को दाबी गरिएको १००% Success Rate।
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="small-title">OUR STUDENTS</span>
+                <h2>हाम्रा विद्यार्थीहरू</h2>
+                <p>
+                    Monochrome SEO सँग जोडिएका विद्यार्थीहरूका झलकहरू।
+                </p>
+            </div>
+
+            <div class="testimonial-grid">
+
+                <div class="testimonial-card">
+                    <img
+                        src="images/students/student1.jpg"
+                        alt="Monochrome SEO का विद्यार्थी पहिलो"
+                        width="1200"
+                        height="800"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>विद्यार्थी १</h3>
+                    <p>
+                        SEO Learning Journey मा सहभागी विद्यार्थी।
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <img
+                        src="images/students/student2.jpg"
+                        alt="Monochrome SEO का विद्यार्थी दोस्रो"
+                        width="1200"
+                        height="800"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>विद्यार्थी २</h3>
+                    <p>
+                        SEO Learning Journey मा सहभागी विद्यार्थी।
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <img
+                        src="images/students/student3.jpg"
+                        alt="Monochrome SEO का विद्यार्थी तेस्रो"
+                        width="1200"
+                        height="800"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <h3>विद्यार्थी ३</h3>
+                    <p>
+                        SEO Learning Journey मा सहभागी विद्यार्थी।
+                    </p>
+                </div>
+
+            </div>
+
+            <p class="testimonial-note">
+                वास्तविक विद्यार्थीका नाम र अनुभव प्राप्त भएपछि यहाँ थप्न सकिन्छ।
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section class="location" id="location">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="small-title">हाम्रो स्थान</span>
+                <h2>हामी कहाँ छौँ?</h2>
+                <p>
+                    Monochrome SEO मा जोडिनुहोस् र आफ्नो SEO Learning Journey सुरु गर्नुहोस्।
+                </p>
+            </div>
+
+            <div class="location-box">
+                <div class="location-icon">📍</div>
+                <h3>Lalitpur, Nepal</h3>
+                <p>Monochrome SEO</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+
+            <div class="contact-content">
+
+                <span class="tag">Let's Connect</span>
+
+                <h2>SEO सिक्ने यात्रा आजै सुरु गरौँ!</h2>
+
+                <p>
+                    SEO Training वा Course सम्बन्धी थप जानकारी लिन हामीलाई फोन गर्नुहोस् वा WhatsApp मा सम्पर्क गर्नुहोस्।
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a href="tel:015914543" class="btn phone-btn">
+                        📞 फोन गर्नुहोस्
+                    </a>
+
+                    <a
+                        href="https://wa.me/97715914543"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn whatsapp-btn"
+                    >
+                        💬 WhatsApp गर्नुहोस्
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>
+                © <strong>Monochrome SEO</strong> | Lalitpur, Nepal.
+                All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
